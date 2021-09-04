@@ -1,4 +1,13 @@
-body {}
+body {
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+
+}
 
 label {
     margin: 10px;
@@ -15,10 +24,22 @@ button {
     border-radius: 50px;
 }
 
+table {
+    background-color: white;
+    opacity: 80%;
+}
+
 .card {
     width: 15rem;
     height: auto;
     margin: 10px;
+    opacity: 80%;
+}
+
+@media only screen and (max-width: 600px){
+    .card {
+        width: 14rem;
+    }
 }
 
 .card-img-top{
