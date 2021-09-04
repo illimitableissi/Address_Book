@@ -34,7 +34,7 @@
                     <td>{{ info.CustomerID}}</td>
                     <td>{{ info.ContactName }}</td>
                     <td>{{ info.CompanyName }}</td>
-                    <td>{{ info.Title }}</td>
+                    <td>{{ info.ContactTitle }}</td>
                     <td>{{ info.Address }}</td>
                     <td>{{ info.City }}</td>
                     <td>{{ info.Email }}</td>
@@ -47,27 +47,26 @@
               </table>
             </div>
         <div class="container">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;"ng-repeat="info in contacts">
+                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">{{contactName}}</h5>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Company Name: </li>
-                    <li class="list-group-item">Title: </li>
-                    <li class="list-group-item">Address</li>
-                    <li class="list-group-item">City: </li>
-                    <li class="list-group-item">Email: </li>
-                    <li class="list-group-item">Postal Code: </li>
-                    <li class="list-group-item">Country: </li>
-                    <li class="list-group-item">Phone: </li>
-                    <li class="list-group-item">Fax: </li>
+                  <h5 class="card-title">{{info.ContactName}}</h5>
+                    <p class="card-text">Company Name: {{ info.CompanyName }} </li>
+                    <p class="card-text">Title: {{ info.ContactTitle }} </p>
+                    <p class="card-text">Address: {{ info.Address }}</p>
+                    <p class="card-text">City: {{ info.City }} </p>
+                    <p class="card-text">Email: {{ info.Email }} </p>
+                    <p class="card-text">Postal Code: {{ info.PostalCode }} </p>
+                    <p class="card-text">Country: {{ info.Country }} </p>
+                    <p class="card-text">Phone: {{ info.Phone }} </p>
+                    <p class="card-text">Fax: {{ info.Fax }} </p>
                   </ul>
                 </div>
             </div>
     </div>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    <!-- <script src="xml2json.js"></script> -->
     <script src="xmlToJson.js"></script>
-    <script src="scripts.js" type="module"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
