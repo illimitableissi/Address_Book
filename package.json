@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "-": "^0.0.1",
-    "angular-cli-ghpages": "^1.0.0-rc.2",
-    "save-dev": "^0.0.1-security"
-  }
-}

@@ -1,6 +1,6 @@
 # Address_Book
 
-Address Book made using Angular 1.x and XML Data
+Address Book made using Angular 1.x and XML Data. You can view the data in a table format or a business card format
 
 ## Technologies Used
 
