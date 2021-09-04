@@ -7,4 +7,4 @@ Address Book made using Angular 1.x and XML Data
 * Angular
 * Bootstrap
 
-![home](https://github.com/illimitableissi/Address_Book/blob/main/capture.png)
+![home](https://github.com/illimitableissi/Address_Book/blob/main/capture.PNG)
