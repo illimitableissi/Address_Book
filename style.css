@@ -1,0 +1,14 @@
+label {
+    margin: 10px;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: 'Libre Barcode 128 Text', cursive;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
