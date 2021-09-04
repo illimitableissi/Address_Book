@@ -1,3 +1,5 @@
+body {}
+
 label {
     margin: 10px;
 }
@@ -11,4 +13,18 @@ button {
     background-color: black;
     color: white;
     border-radius: 50px;
+}
+
+.card {
+    width: 15rem;
+    height: auto;
+    margin: 10px;
+}
+
+.card-img-top{
+    background-color: gray;
+}
+
+.card-text {
+    margin: 0;
 }

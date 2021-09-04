@@ -62,10 +62,12 @@
 
         <div class="container card-container text-center" ng-show="cardsVisible">
             <label>Search: <input ng-model="searchCards"></label>
-            <div class="card" style="width: 18rem;"ng-repeat="info in contacts | filter:searchCards">
-                <img src="placeholder.png" class="card-img-top" alt="...">
+            <div class="row">
+            <div class="card" ng-repeat="info in contacts | filter:searchCards">
+                <img src="placeholder.png" class="card-img-top" alt="photo">
                 <div class="card-body">
                   <h5 class="card-title">{{info.ContactName}}</h5>
+                  <hr>
                     <p class="card-text">Company Name: {{ info.CompanyName }} </li>
                     <p class="card-text">Title: {{ info.ContactTitle }} </p>
                     <p class="card-text">Address: {{ info.Address }}</p>
@@ -78,6 +80,7 @@
                   </ul>
                 </div>
             </div>
+        </div>
         </div>
 
     </div>
