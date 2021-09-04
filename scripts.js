@@ -1,7 +1,6 @@
 var app = angular.module('addressBook', []);
 
 app.controller('contactsController', function ($scope, $http) {
-    this.contacts= [];
 $http({     
     method: 'GET', 
     url: '/ab.xml'
@@ -10,4 +9,14 @@ $http({
         $scope.contacts = json.AddressBook.Contact
         },
     );
+    $scope.tableVisible = false;
+    $scope.cardsVisible = false;
+    
+    $scope.showHideTable = function(){
+        $scope.tableVisible = $scope.tableVisible ? false : true;
+    }
+
+    $scope.showHideCards = function(){
+        $scope.cardsVisible = $scope.cardsVisible ? false : true;
+    }
 });
