@@ -10,20 +10,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Address Book</h1>
-    <div ng-app="addressBook" ng-controller="contactsController as cControl">
-        <!-- <p>Hi, Guest</p>
-        <h1>{{myWelcome}}</h1>
-        <p>StatusCode: {{statusval}}</p>
-        <p>Status: {{statustext}}</p>
-        <p>Response Headers: {{headers}}</p> -->
-        <div class="contact-item">
-        <table>
-            <th>
-                {{company}}
-            </th>
-        </table>
-        </div>
+    <h1 class="text-center">Address Book</h1>
+    <div ng-app="addressBook" ng-controller="contactsController">
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Company Name</th>
+                      <th>Title</th>
+                      <th>Address</th>
+                      <th>City</th>
+                      <th>Email</th>
+                      <th>Postal Code</th>
+                      <th>Country</th>
+                      <th>Phone</th>
+                      <th>Fax</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="info in contacts">
+                    <td>{{ info.CustomerID}}</td>
+                    <td>{{ info.ContactName }}</td>
+                    <td>{{ info.CompanyName }}</td>
+                    <td>{{ info.Title }}</td>
+                    <td>{{ info.Address }}</td>
+                    <td>{{ info.City }}</td>
+                    <td>{{ info.Email }}</td>
+                    <td>{{ info.PostalCode }}</td>
+                    <td>{{ info.Country }}</td>
+                    <td>{{ info.Phone }}</td>
+                    <td>{{ info.Fax }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        <div class="container">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{contactName}}</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Company Name: </li>
+                    <li class="list-group-item">Title: </li>
+                    <li class="list-group-item">Address</li>
+                    <li class="list-group-item">City: </li>
+                    <li class="list-group-item">Email: </li>
+                    <li class="list-group-item">Postal Code: </li>
+                    <li class="list-group-item">Country: </li>
+                    <li class="list-group-item">Phone: </li>
+                    <li class="list-group-item">Fax: </li>
+                  </ul>
+                </div>
+            </div>
     </div>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
