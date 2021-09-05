@@ -63,20 +63,20 @@
         <div class="container card-container text-center" ng-show="cardsVisible">
             <label>Search: <input ng-model="searchCards"></label>
             <div class="row">
-            <div class="card" ng-repeat="info in contacts | filter:searchCards">
-                <img src="placeholder.png" class="card-img-top" alt="photo">
+            <div class="cards" ng-repeat="info in contacts | filter:searchCards">
+                <img src="placeholder.png" class="card-img" alt="photo">
                 <div class="card-body">
                   <h5 class="card-title">{{info.ContactName}}</h5>
                   <hr>
-                    <p class="card-text">Company Name: {{ info.CompanyName }} </li>
-                    <p class="card-text">Title: {{ info.ContactTitle }} </p>
-                    <p class="card-text">Address: {{ info.Address }}</p>
-                    <p class="card-text">City: {{ info.City }} </p>
-                    <p class="card-text">Email: {{ info.Email }} </p>
-                    <p class="card-text">Postal Code: {{ info.PostalCode }} </p>
-                    <p class="card-text">Country: {{ info.Country }} </p>
-                    <p class="card-text">Phone: {{ info.Phone }} </p>
-                    <p class="card-text">Fax: {{ info.Fax }} </p>
+                    <p class="card-text"><b>Company Name:</b> {{ info.CompanyName }} </li>
+                    <p class="card-text"><b>Title:</b> {{ info.ContactTitle }} </p>
+                    <p class="card-text"><b>Address:</b> {{ info.Address }}</p>
+                    <p class="card-text"><b>City:</b> {{ info.City }} </p>
+                    <p class="card-text"><b>Email: </b> {{ info.Email }} </p>
+                    <p class="card-text"><b>Postal Code: </b> {{ info.PostalCode }} </p>
+                    <p class="card-text"><b>Country:</b> {{ info.Country }} </p>
+                    <p class="card-text"><b>Phone: </b>{{ info.Phone }} </p>
+                    <p class="card-text"><b>Fax: </b>{{ info.Fax }} </p>
                   </ul>
                 </div>
             </div>

@@ -29,21 +29,32 @@ table {
     opacity: 80%;
 }
 
-.card {
-    width: 15rem;
+.cards {
+    display: flex;
+    width: 40rem;
     height: auto;
     margin: 10px;
     opacity: 80%;
+    background-color:white;
 }
 
 @media only screen and (max-width: 600px){
-    .card {
-        width: 14rem;
+    .cards {
+        width: 100%;
+        display: inline-block
+    }
+
+    .card-img{
+        float: none;
+        width: 100%;
     }
 }
 
-.card-img-top{
+.card-img{
     background-color: gray;
+    float: left;
+    width: 50%;
+    height: auto;
 }
 
 .card-text {
