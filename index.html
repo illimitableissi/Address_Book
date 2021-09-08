@@ -29,21 +29,21 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                      <th>ID</th>
-                      <th>Name</th>
-                      <th>Company Name</th>
-                      <th>Title</th>
-                      <th>Address</th>
-                      <th>City</th>
-                      <th>Email</th>
-                      <th>Postal Code</th>
-                      <th>Country</th>
-                      <th>Phone</th>
-                      <th>Fax</th>
+                      <th ng-click='sortColumn("ID")' ng-class='sortClass("ID")'>ID</th>
+                      <th ng-click='sortColumn("Name")' ng-class='sortClass("Name")'>Name</th>
+                      <th ng-click='sortColumn("CompanyName")' ng-class='sortClass("CompanyName")'h>Company Name</th>
+                      <th ng-click='sortColumn("ContactTitle")' ng-class='sortClass("ContactTitle")'>Title</th>
+                      <th ng-click='sortColumn("Address")' ng-class='sortClass("Address")'>Address</th>
+                      <th ng-click='sortColumn("City")' ng-class='sortClass("City")'>City</th>
+                      <th ng-click='sortColumn("Email")' ng-class='sortClass("Email")'>Email</th>
+                      <th ng-click='sortColumn("PostalCode")' ng-class='sortClass("PostalCode")'>Postal Code</th>
+                      <th ng-click='sortColumn("Country")' ng-class='sortClass("Country")'>Country</th>
+                      <th ng-click='sortColumn("Phone")' ng-class='sortClass("Phone")'>Phone</th>
+                      <th ng-click='sortColumn("Fax")' ng-class='sortClass("Fax")'>Fax</th>
                     </tr>
                 </thead>
                 <tbody>
-                  <tr ng-repeat="info in contacts | filter:searchText">
+                  <tr ng-repeat="info in contacts | filter:searchText | orderBy:column:reverse">
                     <td>{{ info.CustomerID}}</td>
                     <td>{{ info.ContactName }}</td>
                     <td>{{ info.CompanyName }}</td>
@@ -82,7 +82,6 @@
             </div>
             </div>
         </div>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="xmlToJson.js"></script>
